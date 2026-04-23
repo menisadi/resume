@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  color: #333;
+  background: white;
+  padding: 18mm 20mm;
+}
+
+/* Header / Name */
+h1 {
+  font-size: 28pt;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+/* Contact line (the paragraph right after h1) */
+h1 + p {
+  font-size: 9.5pt;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+h1 + p a {
+  color: #b5121b;
+  text-decoration: none;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1.5px solid #b5121b;
+  margin: 8px 0 12px 0;
+}
+
+/* Section headings */
+h2 {
+  font-size: 11pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #b5121b;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  padding-bottom: 2px;
+  border-bottom: 0.8px solid #ddd;
+}
+
+/* Entry headings */
+h3 {
+  font-size: 10.5pt;
+  font-weight: 600;
+  color: #222;
+  margin-top: 8px;
+  margin-bottom: 1px;
+}
+
+/* Bold dates / GPA */
+h3 + p {
+  font-size: 9.5pt;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+h3 + p strong {
+  color: #444;
+}
+
+p {
+  margin-bottom: 4px;
+  font-size: 10pt;
+  color: #444;
+}
+
+/* Summary & Skills bullet lists */
+ul {
+  padding-left: 18px;
+  margin-bottom: 4px;
+}
+
+ul li {
+  margin-bottom: 3px;
+  font-size: 10pt;
+  color: #444;
+}
+
+/* Publications */
+h2 + p, p + p {
+  margin-bottom: 6px;
+}
+
+/* Awards table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.8pt;
+  margin-top: 4px;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding: 3px 6px 3px 0;
+}
+
+td {
+  padding: 3px 6px 3px 0;
+  color: #444;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+a {
+  color: #b5121b;
+  text-decoration: none;
+}
+
+em {
+  color: #555;
+}
