@@ -71,14 +71,21 @@
 }
 
 #let pubentry(title: "", venue: "", desc: "") = {
-  text(weight: "bold")[#title]
-  linebreak()
-  text(fill: accent, size: 9.5pt)[#venue]
-  if desc != "" {
-    linebreak()
-    text(fill: gray, size: 9.5pt)[#desc]
-  }
-  v(3.5mm)
+  grid(
+    columns: (auto, 1fr),
+    column-gutter: 6pt,
+    text(fill: dark)[•],
+    {
+      text(weight: "bold")[#title]
+      text(fill: gray)[  |  ]
+      text(fill: accent, size: 9.5pt)[#venue]
+      if desc != "" {
+        linebreak()
+        text(fill: gray, size: 9.5pt)[#desc]
+      }
+    },
+  )
+  v(1.5mm)
 }
 
 #let cvhonor(award: "", org: "", year: "") = {
@@ -110,9 +117,9 @@
   sub: "Intent IQ · Israel – Hybrid",
   date: "Feb 2023 – Present",
   body: [
-    - Optimization using contextual bandit models with online learning.
-    - Cross-device identity resolution combining graph algorithms with XGBoost classifiers and Word2Vec-encoded features.
-    - Production ML pipelines on AWS (S3, SQS, ECS) with Docker-based deployments, processing tens of millions of records per day.
+    - Optimization using contextual bandit models with online learning tools.
+    - Identity resolution combining graph algorithms with supervised classifiers and word-embedings.
+    - Production ML pipelines on AWS with Docker-based deployments, processing tens of millions of records per day.
   ],
 )
 
