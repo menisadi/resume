@@ -108,7 +108,7 @@
   title: "Data Scientist",
   sub: "Intent IQ · Israel – Hybrid",
   date: "Feb 2023 – Present",
-  body: [Working on AdTech problems including identity resolution, recommendation systems, statistical analysis, and model deployment. Building and maintaining production ML pipelines on AWS (S3, Lambda, Athena, ECS) using Docker-based deployments.],
+  body: [Working on AdTech problems: bid floor optimization using contextual bandit models (Thompson Sampling, LinUCB, Epsilon-Greedy) with online learning, and cross-device identity resolution combining graph algorithms with XGBoost classifiers and Word2Vec-encoded features. Building and maintaining production ML pipelines on AWS (S3, SQS, ECS) using Docker-based deployments.],
 )
 
 #cventry(
@@ -200,7 +200,7 @@
   column-gutter: 10pt,
   row-gutter: 5pt,
   text(weight: "bold")[Programming:],
-  [Python (Pandas, NumPy, Scikit-learn, XGBoost, Gensim); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker.],
+  [Python (Pandas, NumPy, Scikit-learn, XGBoost, Gensim, PyArrow); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker; protobuf.],
   text(weight: "bold")[Languages:],
   [Hebrew, English, Portuguese],
 )
