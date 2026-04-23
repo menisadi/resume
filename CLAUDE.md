@@ -5,27 +5,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Build
 
 ```bash
-xelatex resume.tex
+typst compile resume.typ
 ```
 
-Requires XeLaTeX installed locally. Alternatively, open on [Overleaf](https://overleaf.com). Output is `Current_CV.pdf`.
+Requires [Typst](https://typst.app) installed locally. Output is `resume.pdf`.
 
 ## Architecture
 
-This is a LaTeX CV project based on the [Awesome-CV](https://github.com/posquit0/Awesome-CV) template.
+The main CV is written in Typst:
 
-- **`resume.tex`** — Main document with all CV content (sections: Summary, Experience, Education, Publications, Awards, Skills)
-- **`awesome-cv.cls`** — Document class defining all layout commands and styling (`\cventry`, `\cvsection`, etc.). Rarely needs changes unless customizing the template design.
-- **`fontawesome.sty`** — Font Awesome icon support for contact info
-- **`fonts/`** — Roboto and Source Sans Pro typefaces used by the class
+- **`resume.typ`** — Main document with all CV content (sections: Summary, Experience, Education, Publications, Awards, Skills)
 
-The backup files (`resume-backup.tex`, `awesome-backup.tex`) are copies of the original template with placeholder data and are not compiled.
+The legacy LaTeX version (based on [Awesome-CV](https://github.com/posquit0/Awesome-CV)) lives in `latex/`:
+
+- **`latex/resume.tex`** — LaTeX source
+- **`latex/awesome-cv.cls`** — Document class with layout/styling
+- **`latex/fontawesome.sty`** — Font Awesome icon support
+- **`latex/fonts/`** — Roboto and Source Sans Pro typefaces
 
 ## Theme Color
 
-The active color is set in `resume.tex`:
-```latex
-\colorlet{awesome}{awesome-red}
+The accent color is set near the top of `resume.typ`:
+```typst
+#let accent = rgb("#CE1212")
 ```
-
-Available presets: `awesome-emerald`, `awesome-skyblue`, `awesome-red`, `awesome-pink`, `awesome-orange`, `awesome-nephritis`, `awesome-concrete`, `awesome-darknight`.
