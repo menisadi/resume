@@ -74,8 +74,10 @@
   text(weight: "bold")[#title]
   linebreak()
   text(fill: accent, size: 9.5pt)[#venue]
-  linebreak()
-  text(fill: gray, size: 9.5pt)[#desc]
+  if desc != "" {
+    linebreak()
+    text(fill: gray, size: 9.5pt)[#desc]
+  }
   v(3.5mm)
 }
 
@@ -96,10 +98,9 @@
 // ── Summary ──────────────────────────────────────────────────────────────────
 #section("Summary")
 #set list(indent: 4pt, body-indent: 6pt, spacing: 4pt)
-- Ph.D. in Computer Science with a thesis on machine learning and data privacy.
-- Experienced in the use of contemporary platforms related to the fields of data science and machine learning.
-- Main author of publications in top-tier conferences.
-- Currently working as a Data Scientist at Intent IQ, applying machine learning and algorithms research in production.
+- Data Scientist at Intent IQ with 2+ years applying ML and algorithms research in production AdTech systems.
+- Ph.D. in Computer Science; thesis on machine learning and data privacy.
+- Published at top-tier venues (ICML, NeurIPS, ESA, ALT).
 
 // ── Experience ───────────────────────────────────────────────────────────────
 #section("Experience")
@@ -108,14 +109,17 @@
   title: "Data Scientist",
   sub: "Intent IQ · Israel – Hybrid",
   date: "Feb 2023 – Present",
-  body: [Working on AdTech problems: bid floor optimization using contextual bandit models (Thompson Sampling, LinUCB, Epsilon-Greedy) with online learning, and cross-device identity resolution combining graph algorithms with XGBoost classifiers and Word2Vec-encoded features. Building and maintaining production ML pipelines on AWS (S3, SQS, ECS) using Docker-based deployments.],
+  body: [
+    - Optimization using contextual bandit models with online learning.
+    - Cross-device identity resolution combining graph algorithms with XGBoost classifiers and Word2Vec-encoded features.
+    - Production ML pipelines on AWS (S3, SQS, ECS) with Docker-based deployments, processing tens of millions of records per day.
+  ],
 )
 
 #cventry(
   title: "Teaching Assistant",
   sub: "Ben-Gurion University of the Negev",
   date: "2015 – 2022",
-  body: [Teaching: Discrete Structures and Combinatorics, Design of Algorithms, Graphs, Introduction to Machine Learning, Adaptive Data Analysis.],
 )
 
 #cventry(
@@ -156,31 +160,26 @@
 #pubentry(
   title: "Agnostic Sample Compression Schemes for Regression",
   venue: "ICML 2024 (Spotlight)",
-  desc: "Establishing agnostic sample compression schemes for regression with near-optimal rates.",
 )
 
 #pubentry(
   title: "Relaxed Models for Adversarial Streaming: The Advice Model and the Bounded Interruptions Model",
   venue: "ESA 2023",
-  desc: "Introducing relaxed adversarial streaming models that allow practical algorithm design with provable guarantees.",
 )
 
 #pubentry(
   title: "Adaptive Data Analysis with Correlated Observations",
   venue: "ICML 2022",
-  desc: "A fundamental study regarding the possible extensions of adaptive data analysis tools such that they could be used with correlated observations.",
 )
 
 #pubentry(
   title: "On the Sample Complexity of Privately Learning Axis-Aligned Rectangles",
   venue: "NeurIPS 2021",
-  desc: "A privacy preserving learning algorithm for the Axis-Aligned Rectangles problem which has near-optimal sample complexity.",
 )
 
 #pubentry(
   title: "Sample Compression for Real-Valued Learners",
   venue: "ALT 2019",
-  desc: "An algorithmically efficient version of the learner-to-compression scheme conversion which is also extended to regression hypotheses classes.",
 )
 
 // ── Awards ───────────────────────────────────────────────────────────────────
@@ -200,7 +199,7 @@
   column-gutter: 10pt,
   row-gutter: 5pt,
   text(weight: "bold")[Programming:],
-  [Python (Pandas, NumPy, Scikit-learn, XGBoost, Gensim, PyArrow); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker; protobuf.],
+  [Python (Pandas, NumPy, Scikit-learn, XGBoost); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker; protobuf.],
   text(weight: "bold")[Languages:],
   [Hebrew, English, Portuguese],
 )
