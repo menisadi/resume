@@ -108,7 +108,7 @@
   title: "Data Scientist",
   sub: "Intent IQ · Israel – Hybrid",
   date: "Feb 2023 – Present",
-  body: [Applying machine learning and algorithms research in a production environment.],
+  body: [Working on AdTech problems including identity resolution, recommendation systems, statistical analysis, and model deployment. Building and maintaining production ML pipelines on AWS (S3, Lambda, Athena, ECS) using Docker-based deployments.],
 )
 
 #cventry(
@@ -200,9 +200,7 @@
   column-gutter: 10pt,
   row-gutter: 5pt,
   text(weight: "bold")[Programming:],
-  [Experienced with Python and various libraries such as Pandas, Scikit-learn, and TensorFlow.],
-  text(weight: "bold")[Research:],
-  [Ability to delve deeper, learn complex and new concepts in order to attack challenging problems.],
+  [Python (Pandas, NumPy, Scikit-learn, XGBoost, Gensim); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker.],
   text(weight: "bold")[Languages:],
   [Hebrew, English, Portuguese],
 )

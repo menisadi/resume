@@ -18,7 +18,7 @@ menisadi@gmail.com | 0546751163 | IL | [menisadi.github.io](https://menisadi.git
 ### Data Scientist — Intent IQ
 **Feb 2023 – Present** | Israel – Hybrid
 
-Applying machine learning and algorithms research in a production environment.
+Working on AdTech problems including identity resolution, recommendation systems, statistical analysis, and model deployment. Building and maintaining production ML pipelines on AWS (S3, Lambda, Athena, ECS) using Docker-based deployments.
 
 ### Teaching Assistant — Ben-Gurion University of the Negev
 **2015 – 2022**
@@ -82,6 +82,5 @@ An algorithmically efficient version of the learner-to-compression scheme conver
 
 ## Skills
 
-- **Programming:** Experienced with Python and various libraries such as Pandas, Scikit-learn, and TensorFlow
-- **Research:** Ability to delve deeper, learn complex and new concepts in order to attack challenging problems
+- **Programming:** Python (Pandas, NumPy, Scikit-learn, XGBoost, Gensim); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker
 - **Languages:** Hebrew, English, Portuguese
