@@ -1,0 +1,203 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+% \usepackage{DejaVuSans}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Meni} \headerlastnamestyle{Sadigurschi} \\
+	\vspace{2mm}
+	{\faEnvelope\ \href{mailto:menisadi@gmail.com}{menisadi@gmail.com}} | {\faMobile\ 0546751163} | {\faMapMarker\ IL} | {\faLink\ \href{https://menisadi.github.io/}{menisadi.github.io}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Summary
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Summary}
+\vspace{-5mm}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		$\bullet$  & {\skill{\quad Ph.D. in Computer Science with a thesis on machine learning and data privacy.}} \\
+		$\bullet$  & {\skill{\quad Experienced in the use of contemporary platforms related to the fields of data science and machine learning.}} \\
+  		$\bullet$  & {\skill{\quad Main author publications in top-tier conferences.}} \\
+            $\bullet$  & {\skill{\quad Looking for a role involving data science, machine learning or algorithms, in a dynamic company with option}} \\ 
+            \  & {\skill{\quad to grow on cutting edge technology and work on challenging projects.}} 
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-10mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Ben-Gurion University of the Negev}
+	{Teaching Assistant}
+	{2015 – Present}
+	{}
+    {Teaching: Discrete Structures and Combinatorics, Design of Algorithms, Graphs, \hspace{20em} Introduction to machine learning, Adaptive data analysis.}	
+	\cventry
+	{Georgetown University (remote)}
+	{Research Assistant}
+	{2016 – 2018}
+	{}
+    {Working with Prof. Kobi Nissim from Harvard University and Georgetown University. \hspace{20em}
+    Working on optimization and Implementations of private learning algorithms.}
+	% \cventry
+	% {\textit{Israel Defense Forces}}
+	% {Analyst}
+	% {2009 – 2011}
+	% {}
+ %    {Research and analysis of intelligence data, providing decision-makers with complete\hspace{20em}
+ %    and comprehensive information.}
+\end{cventries}
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Ben-Gurion University of the Negev}
+	{Ph.D in Computer Science}
+	{2018 – Present}	
+	{}
+	{Title: A Study of Privacy and Compression in Learning Theory}
+	\cventry
+	{Ben-Gurion University of the Negev}
+	{M.Sc in Computer Science}	
+    {2016 – 2018}
+	{\textbf{GPA: 98}}	    
+	{Title: Compression-Schemes for Real-Valued Learners}	
+	\cventry
+	{Ben-Gurion University of the Negev}	
+	{B.Sc in Mathematics and Computer Science}
+	{2013 – 2016}
+	{\textbf{GPA: 93}}
+    {}
+\end{cventries}
+
+\vspace{-5mm}
+
+\cvsection{Publications}
+\begin{cventries}
+	\cventry
+	{A fundamental study regarding the possible extensions of adaptive data analysis tools such that they could be used with correlated observations. \textbf{Published at ICML 22}}
+	{Adaptive Data Analysis with Correlated Observations}
+	{}
+	{%\href{https://arxiv.org/abs/2201.08704}{https://arxiv.org/abs/2201.08704}
+    }
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A privacy preserving learning algorithm for the Axis-Aligned Rectangles problem which has near-optimal sample complexity. \textbf{Published at NeurIPS 21}}
+	{On the Sample Complexity of Privately Learning Axis-Aligned Rectangles}
+	{}
+	{%\href{https://arxiv.org/abs/2107.11526}{https://arxiv.org/abs/2107.11526}
+    }
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{An algorithmically efficient version of the learner-to-compression scheme conversion which is also extended to regression hypotheses classes. \textbf{Published at ALT 19}}
+	{Sample Compression for Real-Valued Learners}
+	{}
+	{%\href{https://arxiv.org/abs/1805.08254}{https://arxiv.org/abs/1805.08254}
+    }
+	{}
+\end{cventries}
+\vspace{-6mm}	
+\cvsection{Awards}
+\begin{cvhonors}
+	\cvhonor
+	{Excellence in teaching award}
+	{\scriptsize{Ben-Gurion University of the Negev}}
+	{}
+	{2022}
+	\cvhonor
+	{Scholarship for High-tech excellent doctoral students}
+	{\scriptsize{The Kreitman school of Advanced Graduate Studies}}
+	{}
+	{2019}
+	\cvhonor
+	{Dean’s list}
+	{\scriptsize{Ben-Gurion University of the Negev}}
+	{}
+	{2018}	
+	\cvhonor
+	{Suzan Zlotowski Prize for Academic Excellence}
+	{\scriptsize{Ben-Gurion University of the Negev}}
+	{}
+	{2014}	
+	\cvhonor
+	{Schulich Leader Scholarships Winner}
+	{\scriptsize{The Schulich Foundation}}
+	{}
+	{2013}	
+\end{cvhonors}
+\cvsection{Skills}
+\vspace{-5mm}
+\begin{cventries}
+	\cventry
+	{\tiny}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming:  & {\skill{\quad Experienced with Python and various libraries such as Pandas, Scikit-learn and TensorFlow}} \\
+  Research:  & {\skill{\quad Has the ability to delve deeper, learn complex and new concepts in order to attack challenging problems.}} \\
+		Languages:  & {\skill{ \quad Hebrew, English, Portuguese}} \\
+		\end{tabular}}}
+	{\tiny}
+	{\tiny}
+	{\tiny}
+\end{cventries}
+\end{document}
