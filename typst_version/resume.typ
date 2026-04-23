@@ -54,12 +54,14 @@
         linebreak()
         text(fill: gray, size: 9.5pt)[#sub]
       }
+    },
+    {
+      align(right)[#text(fill: gray, size: 9pt)[#date]]
       if note != "" {
         linebreak()
-        text(fill: accent, weight: "bold", size: 9pt)[#note]
+        align(right)[#text(fill: accent, weight: "bold", size: 9pt)[#note]]
       }
     },
-    align(right + top)[#text(fill: gray, size: 9pt)[#date]],
   )
   if body != none {
     v(1.5pt)
@@ -79,14 +81,14 @@
 
 #let cvhonor(award: "", org: "", year: "") = {
   grid(
-    columns: (1fr, auto),
-    gutter: 4pt,
+    columns: (auto, 1fr),
+    column-gutter: 14pt,
+    align(top)[#text(fill: gray, size: 9pt)[#year]],
     {
       text(weight: "bold")[#award]
       linebreak()
       text(fill: gray, size: 9pt)[#org]
     },
-    align(right + top)[#text(fill: gray, size: 9pt)[#year]],
   )
   v(2.5mm)
 }
