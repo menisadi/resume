@@ -7,7 +7,7 @@
 #let gray    = rgb("#5D5D5D")
 
 #set text(
-  font: ("Source Sans Pro", "Roboto", "Helvetica Neue", "Arial"),
+  font: ("Helvetica Neue", "Arial"),
   size: 10pt,
   fill: dark,
 )
