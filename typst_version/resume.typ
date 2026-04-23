@@ -47,21 +47,12 @@
 #let cventry(title: "", sub: "", date: "", note: "", body: none) = {
   grid(
     columns: (1fr, auto),
-    gutter: 4pt,
-    {
-      text(weight: "bold", size: 10.5pt)[#title]
-      if sub != "" {
-        linebreak()
-        text(fill: gray, size: 9.5pt)[#sub]
-      }
-    },
-    {
-      align(right)[#text(fill: gray, size: 9pt)[#date]]
-      if note != "" {
-        linebreak()
-        align(right)[#text(fill: accent, weight: "bold", size: 9pt)[#note]]
-      }
-    },
+    column-gutter: 4pt,
+    row-gutter: 5.5pt,
+    text(weight: "bold", size: 10.5pt)[#title],
+    align(right)[#text(fill: gray, size: 9pt)[#date]],
+    text(fill: gray, size: 9.5pt)[#sub],
+    align(right)[#if note != "" { text(fill: accent, weight: "bold", size: 9pt)[#note] }],
   )
   if body != none {
     v(1.5pt)
@@ -76,9 +67,9 @@
     column-gutter: 6pt,
     text(fill: dark)[•],
     {
-      text(weight: "bold")[#title]
-      text(fill: gray)[  |  ]
-      text(fill: accent, size: 9.5pt)[#venue]
+      text(weight: "bold", size: 9.5pt)[#title]
+      text(fill: gray, size: 9pt)[  |  ]
+      text(fill: accent, size: 9pt)[#venue]
       if desc != "" {
         linebreak()
         text(fill: gray, size: 9.5pt)[#desc]
@@ -206,7 +197,7 @@
   column-gutter: 10pt,
   row-gutter: 5pt,
   text(weight: "bold")[Programming:],
-  [Python (Pandas, NumPy, Scikit-learn, XGBoost); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker; protobuf.],
+  [Python (Pandas, NumPy, Scikit-learn, XGBoost, Plotly, Streamlit, Jupyter); SQL (MySQL, PostgreSQL, AWS Athena); AWS (S3, Lambda, SQS, ECS); Docker; protobuf.],
   text(weight: "bold")[Languages:],
   [Hebrew, English, Portuguese],
 )
