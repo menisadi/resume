@@ -96,7 +96,7 @@
 // ── Summary ──────────────────────────────────────────────────────────────────
 #section("Summary")
 #set list(indent: 4pt, body-indent: 6pt, spacing: 4pt)
-- Data Scientist at Intent IQ with 2+ years applying ML and algorithms research in production AdTech systems.
+- Data Scientist at Intent IQ with 3+ years applying ML and algorithms research in production AdTech systems.
 - Ph.D. in Computer Science; thesis on machine learning and data privacy.
 - Published at top-tier venues (ICML, NeurIPS, ESA, ALT).
 
@@ -105,7 +105,7 @@
 
 #cventry(
   title: "Data Scientist",
-  sub: "Intent IQ · Israel – Hybrid",
+  sub: "Intent IQ · Herzliya, Israel",
   date: "Feb 2023 – Present",
   body: [
     - Optimization using contextual bandit models with online learning tools.
