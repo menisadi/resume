@@ -96,7 +96,7 @@
 // ── Summary ──────────────────────────────────────────────────────────────────
 #section("Summary")
 #set list(indent: 4pt, body-indent: 6pt, spacing: 4pt)
-- Data Scientist at Intent IQ with 3+ years applying ML and algorithms research in production AdTech systems.
+- ML Researcher and Engineer with 3+ years bringing algorithmic research into large-scale production AdTech systems.
 - Ph.D. in Computer Science; thesis on machine learning and data privacy.
 - Published at top-tier venues (ICML, NeurIPS, ESA, ALT).
 
@@ -108,9 +108,9 @@
   sub: "Intent IQ · Herzliya, Israel",
   date: "Feb 2023 – Present",
   body: [
-    - Optimization using contextual bandit models with online learning tools.
-    - Identity resolution combining graph algorithms with supervised classifiers and word-embedings.
-    - Production ML pipelines on AWS with Docker-based deployments, processing tens of millions of records per day.
+    - Architected end-to-end ML pipelines on AWS (S3, Lambda, SQS, ECS) with Docker deployments, processing tens of millions of records daily.
+    - Research and production implementation of contextual bandit models with online learning for real-time optimization.
+    - Identity resolution via graph algorithms, supervised classifiers, and learned embeddings.
   ],
 )
 
