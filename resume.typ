@@ -96,7 +96,7 @@
 // ── Summary ──────────────────────────────────────────────────────────────────
 #section("Summary")
 #set list(indent: 4pt, body-indent: 6pt, spacing: 4pt)
-- ML Researcher and Engineer with 3+ years bringing algorithmic research into large-scale production AdTech systems.
+- ML Research Engineer with 3+ years bringing algorithmic research into large-scale production AdTech systems.
 - Ph.D. in Computer Science; thesis on machine learning and data privacy.
 - Published at top-tier venues (ICML, NeurIPS, ESA, ALT).
 
@@ -104,13 +104,13 @@
 #section("Experience")
 
 #cventry(
-  title: "Data Scientist",
+  title: "ML Research Engineer",
   sub: "Intent IQ · Herzliya, Israel",
   date: "Feb 2023 – Present",
   body: [
-    - Architected end-to-end ML pipelines on AWS (S3, Lambda, SQS, ECS) with Docker deployments, processing tens of millions of records daily.
-    - Research and production implementation of contextual bandit models with online learning for real-time optimization.
-    - Identity resolution via graph algorithms, supervised classifiers, and learned embeddings.
+    - Researched and deployed contextual bandit algorithms with online learning for real-time AdTech optimization, bridging algorithmic design with large-scale production systems.
+    - Developed identity resolution models combining graph algorithms, supervised classifiers, and learned embeddings.
+    - Built end-to-end ML pipelines on AWS (S3, Lambda, SQS, ECS) with Docker, processing tens of millions of records daily.
   ],
 )
 
