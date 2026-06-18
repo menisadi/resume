@@ -36,13 +36,13 @@
 #v(5mm)
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
-#let section(title) = {
-  v(2mm)
-  text(weight: "bold", size: 12pt, fill: accent, tracking: 0.5pt)[#upper(title)]
-  v(-0.5mm)
-  line(length: 100%, stroke: 0.7pt + accent)
-  v(2mm)
-}
+#let section(title) = block(sticky: true)[
+  #v(2mm)
+  #text(weight: "bold", size: 12pt, fill: accent, tracking: 0.5pt)[#upper(title)]
+  #v(-0.5mm)
+  #line(length: 100%, stroke: 0.7pt + accent)
+  #v(2mm)
+]
 
 #let cventry(title: "", sub: "", date: "", note: "", body: none) = {
   grid(
@@ -96,8 +96,8 @@
 // ── Summary ──────────────────────────────────────────────────────────────────
 #section("Summary")
 #set list(indent: 4pt, body-indent: 6pt, spacing: 4pt)
-- ML Research Engineer with 3+ years bringing algorithmic research into large-scale production AdTech systems.
-- Ph.D. in Computer Science; thesis on machine learning and data privacy.
+- ML Research Engineer with 3+ years taking algorithmic research from paper to large-scale production — comfortable owning the full arc, from proposing the approach to shipping the system that runs it.
+- Ph.D. in Computer Science (thesis on machine learning and data privacy) — at home in both theoretical depth and the hands-on search for patterns and structure in data.
 - Published at top-tier venues (ICML, NeurIPS, ESA, ALT).
 
 // ── Experience ───────────────────────────────────────────────────────────────
@@ -108,9 +108,9 @@
   sub: "Intent IQ · Herzliya, Israel",
   date: "Feb 2023 – Present",
   body: [
-    - Researched and deployed contextual bandit algorithms with online learning for real-time AdTech optimization, bridging algorithmic design with large-scale production systems.
+    - Designed and deployed contextual-bandit algorithms with online learning for real-time AdTech optimization — from proposing the algorithmic approach to shipping the production system, serving hundreds of millions of records per day.
     - Developed identity resolution models combining graph algorithms, supervised classifiers, and learned embeddings.
-    - Built end-to-end ML pipelines on AWS (S3, Lambda, SQS, ECS) with Docker, processing tens of millions of records daily.
+    - Built end-to-end ML pipelines on AWS (S3, Lambda, SQS, ECS) with Docker, processing hundreds of millions of records daily.
   ],
 )
 
@@ -154,6 +154,9 @@
 
 // ── Publications ─────────────────────────────────────────────────────────────
 #section("Publications")
+
+#text(size: 9pt, fill: gray)[Full list at #link("https://scholar.google.com/citations?user=dmGbLNYAAAAJ&hl")[#underline[#text(fill: accent)[Google Scholar]]].]
+#v(2mm)
 
 #pubentry(
   title: "Agnostic Sample Compression Schemes for Regression",
