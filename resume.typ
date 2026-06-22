@@ -96,8 +96,8 @@
 // ── Summary ──────────────────────────────────────────────────────────────────
 #section("Summary")
 #set list(indent: 4pt, body-indent: 6pt, spacing: 4pt)
-- ML Research Engineer with 3+ years taking algorithmic research from paper to large-scale production — comfortable owning the full arc, from proposing the approach to shipping the system that runs it.
-- Ph.D. in Computer Science (thesis on machine learning and data privacy) — at home in both theoretical depth and the hands-on search for patterns and structure in data.
+- ML Research Engineer with 3+ years taking algorithmic research from paper to large-scale production - comfortable owning the full arc, from proposing the approach to shipping the system that runs it.
+- Ph.D. in Computer Science (thesis on machine learning and data privacy) - at home in both theoretical depth and the hands-on search for patterns and structure in data.
 - Published at top-tier venues (ICML, NeurIPS, ESA, ALT).
 
 // ── Experience ───────────────────────────────────────────────────────────────
@@ -108,7 +108,7 @@
   sub: "Intent IQ · Herzliya, Israel",
   date: "Feb 2023 – Present",
   body: [
-    - Designed and deployed contextual-bandit algorithms with online learning for real-time AdTech optimization — from proposing the algorithmic approach to shipping the production system, serving hundreds of millions of records per day.
+    - Designed and deployed contextual-bandit algorithms with online learning for real-time AdTech optimization - from proposing the algorithmic approach to shipping the production system.
     - Developed identity resolution models combining graph algorithms, supervised classifiers, and learned embeddings.
     - Built end-to-end ML pipelines on AWS (S3, Lambda, SQS, ECS) with Docker, processing hundreds of millions of records daily.
   ],
